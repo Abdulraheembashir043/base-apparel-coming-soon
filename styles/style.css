@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+header, nav, main, section, article, aside, footer {
+  display: block;
+}
+
+.wrapper nav {
+  padding: 30px 40px;
+}
+
+.wrapper .image {
+  height: 250px;
+  background: url(../images/hero-mobile.jpg) no-repeat;
+}
+
+.wrapper .content {
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.wrapper .content h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .2em;
+}
+
+.wrapper .content h1 span {
+  font-size: .9em;
+  color: #ce9797;
+  font-weight: 400;
+}
+
+.wrapper .content p {
+  margin: 10px 0 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ce9797;
+  line-height: 2;
+}
+
+.wrapper .content form {
+  position: relative;
+}
+
+.wrapper .content form input {
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+  border: 2px solid rgba(235, 224, 224, 0.863);
+  border-radius: 50px;
+  color: #322f2f;
+  font-weight: bold;
+}
+
+.wrapper .content form input:focus {
+  border: 2px solid #f8bfbf;
+}
+
+.wrapper .content form input::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+.wrapper .content form input:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.wrapper .content form input::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.wrapper .content form input::placeholder {
+  color: #ce9797;
+}
+
+.wrapper .content form button {
+  background: #f96262;
+  width: 60px;
+  padding: 12px 35px 12px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+}
+
+.wrapper .content form button:hover {
+  background: #f8bfbf;
+  -webkit-box-shadow: 2px 5px 10px #f8bfbf;
+          box-shadow: 2px 5px 10px #f8bfbf;
+}
+
+.wrapper .content form .arrow {
+  padding: 10px;
+  text-align: center;
+  bottom: 0px;
+  right: 1000px;
+}
+
+.wrapper .content form small {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  color: #f96262;
+  color: #ce9797;
+  visibility: hidden;
+}
+
+.wrapper .content form #errorsign {
+  position: absolute;
+  bottom: 10px;
+  right: 70px;
+  visibility: hidden;
+}
+
+.wrapper .content form.error input {
+  border: 2px solid rgba(255, 0, 0, 0.95);
+}
+
+.wrapper .content form.error small {
+  visibility: visible;
+}
+
+.wrapper .content form.error #errorsign {
+  visibility: visible;
+}
+
+.wrapper .content form.success input {
+  border: 2px solid #1ef11e;
+}
+
+footer {
+  font-size: .75em;
+  margin: 50px 0 5px;
+  text-align: center;
+  color: #3e52a3;
+}
+
+footer #fspan {
+  padding-right: 10px;
+  border-right: 2px solid #8838ff;
+}
+
+footer #sspan {
+  padding-left: 10px;
+  border-left: 2px solid #3e52a3;
+}
+
+footer a {
+  color: #8838ff;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #3e2753;
+          text-decoration-color: #3e2753;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #ce9797;
+}
+
+@media screen and (min-width: 786px) {
+  body {
+    background: url(../images/bg-pattern-desktop.svg);
+  }
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 0 0 0 150px;
+  }
+  .wrapper nav {
+    padding-top: 70px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .wrapper .image {
+    height: 800px;
+    background: url(../images/hero-desktop.jpg) no-repeat;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+  .wrapper .content {
+    text-align: left;
+    width: 60%;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .wrapper .content form button {
+    padding: 12px 45px 12px 35px;
+  }
+  .wrapper .content form #errorsign {
+    bottom: 10px;
+    right: 90px;
+  }
+  footer {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
